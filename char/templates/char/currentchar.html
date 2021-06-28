@@ -1,0 +1,72 @@
+{% extends 'char/base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+    <div class="test">
+        <div class="media">
+            <img class="img-fluid" src="{% static 'char/call_of_cthulhu_char.jpg' %}" alt="Walk through the gate"
+                 style="width:1125px;height:540px;">
+        </div>
+        <br>
+    </div>
+
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                <img class="card-img-left flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb"
+                     alt="Thumbnail [200x250]" style="width: 200px; height: 250px;"
+                     src="{% static 'char/coc_char_gen_pic.jpg' %}" data-holder-rendered="true">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2 text-danger">Create an Investigator</strong>
+                    <h3 class="mb-0">
+                        <a href=" {% url 'createbasicinfo' %}">Who are you?</a>
+                    </h3>
+                    <p class="card-text mb-auto">Create a 7th edition Call of Cthulhu Investigator.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2 text-success">Quickstart Rules</strong>
+                    <h3 class="mb-0">
+                        <a href="{% static 'char/CofC-Quick-Start-Rules.pdf' %}" target="_blank">Call of Cthulhu 7th edition quick starter rules</a>
+                    </h3>
+                </div>
+                <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb"
+                     alt="Thumbnail [200x250]" src="{% static 'char/female_coc-char_gen_pic.jpg' %}"
+                     data-holder-rendered="true" style="width: 200px; height: 250px;">
+            </div>
+        </div>
+    </div>
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                <img src="{% static 'char/small_store_front.jpg' %}" alt="Storefront">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2">Shopping</strong>
+                    <a href="{% url 'shopping' %}" target="_blank">Open Shopping items and prices guide In New Tab</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2 text-info">More Weapon Options</strong>
+                    <h3 class="mb-0">
+                        <a href="{% static 'char/Weapons.pdf' %}" target="_blank">Link to more weapons</a>
+                    </h3>
+                </div>
+                <img class="card-img-right flex-auto d-none d-lg-block" data-src="holder.js/200x250?theme=thumb"
+                     alt="Thumbnail [200x250]" src="{% static 'char/guns.jpg' %}"
+                     data-holder-rendered="true">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

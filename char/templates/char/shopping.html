@@ -1,0 +1,823 @@
+{% extends 'char/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <div class="equipment-header">
+                <h1><strong><u>Shopping Ideas</u>:</strong></h1>
+                <img src="{% static 'char/store_fronts.jpg' %}" alt="1920's Store Fronts"><br>
+                <h4><strong>All costs represent an average price and are subject to fluctuation due to availability and
+                    demand.
+                    Consult with the keeper before any purchase.</strong>
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="shopping">
+        <div class="row mb-12">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Clothing</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Men’s Clothing</u></em></td>
+                                <td></td>
+                                <td><em><u>Women’s Clothing</u></em></td>
+                            </tr>
+                            <tr>
+                                <td> Tailored Prince Albert Suit ($25.00)</td>
+                                <td></td>
+                                <td> Tailored Bolero Shirt ($25.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Clerical or Professional Suit ($18.00)</td>
+                                <td></td>
+                                <td> French Silk Wrapper ($11.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Clay Worsted Dress Suit ($12.50)</td>
+                                <td></td>
+                                <td> Chelsea Cloth Wrapper ($1.75)</td>
+                            </tr>
+                            <tr>
+                                <td> Vicuna Cheviot Dress Suit ($6.50)</td>
+                                <td></td>
+                                <td> Silk Shirt Waist ($2.25)</td>
+                            </tr>
+                            <tr>
+                                <td> Oxford Bicycle Suit ($3.25)</td>
+                                <td></td>
+                                <td> Silk Taffetta Moire Skirt ($9.50)</td>
+                            </tr>
+                            <tr>
+                                <td> Mackintosh Rain Coat ($6.98)</td>
+                                <td></td>
+                                <td> Full Sweep Satin Cape ($8.00)</td>
+                            </tr>
+                            <tr>
+                                <td> All-Wool Spring Overcoat ($9.45)</td>
+                                <td></td>
+                                <td> Kid Button Boots ($5.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Satin Smoking Jacket ($5.95)</td>
+                                <td></td>
+                                <td> Cloth-Top Lace-Up Shoes ($2.70)</td>
+                            </tr>
+                            <tr>
+                                <td> Needle-Toe Dress Shoes ($2.95)</td>
+                                <td></td>
+                                <td> Bon Ton Rose Foliage Hat ($3.50)</td>
+                            </tr>
+                            <tr>
+                                <td> Fancy Silk Vest (50¢)</td>
+                                <td></td>
+                                <td> Untrimmed Napoleon Hat (75¢)</td>
+                            </tr>
+                            <tr>
+                                <td> French Percale Shirt (95¢)</td>
+                                <td></td>
+                                <td> French Narrow-Waist Corset ($1.89)</td>
+                            </tr>
+                            <tr>
+                                <td> Lace-Front Wool Sweater ($1.50)</td>
+                                <td></td>
+                                <td> Muslin Camisole (78¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Felt Top Hat (95¢)</td>
+                                <td></td>
+                                <td> China Silk Parasol ($2.35)</td>
+                            </tr>
+                            <tr>
+                                <td> Straw “Boater” Hat (75¢)</td>
+                                <td></td>
+                                <td> Reticule (Lady’s Handbag) (98¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Deerstalker Hat (45¢)</td>
+                                <td></td>
+                                <td> Four-Button Kid Gloves ($1.29)</td>
+                            </tr>
+                            <tr>
+                                <td> Silk Windsor Tie (55¢)</td>
+                                <td></td>
+                                <td> Reversible Beaver Shawl ($3.95)</td>
+                            </tr>
+                            <tr>
+                                <td> Gentleman’s Cane (75¢)</td>
+                                <td></td>
+                                <td> Chantilly Lace Collar ($2.25)</td>
+                            </tr>
+                            <tr>
+                                <td> Flannel Night Shirt (98¢)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Embroidered Suspenders (55¢)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Communication</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Telegram</u></em></td>
+                                <td></td>
+                                <td><em><u>Messenger</u></em></td>
+                            </tr>
+                            <tr>
+                                <td> for 12 words (12¢)</td>
+                                <td></td>
+                                <td> per mile (4¢)</td>
+                            </tr>
+                            <tr>
+                                <td> per additional word (+1¢)</td>
+                                <td></td>
+                                <td> per hour (8¢)</td>
+                            </tr>
+                            <tr>
+                                <td> international, per word ($1.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td> Telegraph Outfit ($3.00)</td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Postage</u></em></td>
+                                <td></td>
+                                <td> Long Distance Telephone ($7.00)</td>
+                            </tr>
+                            <tr>
+                                <td> to 1 ounce (2¢)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> to 2 ounces (+1¢)</td>
+                                <td></td>
+                                <td> Newspaper (2¢)</td>
+                            </tr>
+                            <tr>
+                                <td> each additional 2 ounces (+1¢)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Entertainment</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Theater Tickets</u></em></td>
+                                <td></td>
+                                <td> Upright Cabinet Piano ($189.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Standing (75¢)</td>
+                                <td></td>
+                                <td> Concert Violin with Case ($36.55)</td>
+                            </tr>
+                            <tr>
+                                <td> Seated ($3.00)</td>
+                                <td></td>
+                                <td> Graphophone Outfit ($35.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Box ($7.50)</td>
+                                <td></td>
+                                <td> Graphophone Record (55¢)</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td> Magic Lantern ($9.50)</td>
+                            </tr>
+                            <tr>
+                                <td> Music Hall Ticket ($1.50)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Vaudeville Ticket (50¢)</td>
+                                <td></td>
+                                <td> Hand Camera ($14.40)</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td> Film (48 exposures) ($2.85)</td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Spirits</u></em></td>
+                                <td></td>
+                                <td> View Camera with Tripod ($29.75)</td>
+                            </tr>
+                            <tr>
+                                <td> Cocktail (20¢)</td>
+                                <td></td>
+                                <td> 12 Dry Photographic Plates (50¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Fine Wine (bottle) ($1.75)</td>
+                                <td></td>
+                                <td> Complete Darkroom Outfit ($98.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Ale (5¢)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Whiskey (glass) (6¢)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Whiskey (bottle) ($1.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Lodging &amp; Dining</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Hotels</u></em></td>
+                                <td></td>
+                                <td> House (rent per year) ($600.00</td>
+                            </tr>
+                            <tr>
+                                <td> Good (per night) ($5.00+)</td>
+                                <td></td>
+                                <td> Apartment (rent per week) ($3.50)</td>
+                            </tr>
+                            <tr>
+                                <td> Average (per night) ($2.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Average (per week with service) ($10.00)</td>
+                                <td></td>
+                                <td><em><u>Meals</u></em></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td> Breakfast (25¢)</td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Common Lodging (per night)</u></em></td>
+                                <td></td>
+                                <td> Lunch (50¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Double Bed (20¢)</td>
+                                <td></td>
+                                <td> Dinner ($1.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Single Bed (10¢)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Rope Lean-To (5¢)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Medical Equipment</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Medical Valise ($1.10)</td>
+                                <td></td>
+                                <td> Hickory Crutches ($4.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Forceps (75¢)</td>
+                                <td></td>
+                                <td> Nerve and Brain Pills (88¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Hypodermic Syringes ($2.75)</td>
+                                <td></td>
+                                <td> Laudanum, 4 oz. (tinct. opium) (28¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Electro Medical Battery ($5.75)</td>
+                                <td></td>
+                                <td> Paregoric, 4 oz. (18¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Surgeon’s Instrument Set ($20.00)</td>
+                                <td></td>
+                                <td> Liquor Habit Cure, 24 doses (50¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Elastic Bandage (3×15 inches) ($1.15)</td>
+                                <td></td>
+                                <td> Peruvian Wine of Coca, 16 oz. (95¢)</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Outdoor &amp; Travel Gear</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Camping Equipment</u></em></td>
+                                <td></td>
+                                <td><em><u>Luggage</u></em></td>
+                            </tr>
+                            <tr>
+                                <td> Camp Cooking Kit ($6.50)</td>
+                                <td></td>
+                                <td> Kit Bag (20″ × 27″) ($1.20)</td>
+                            </tr>
+                            <tr>
+                                <td> Mexican Woven Hammock ($1.59)</td>
+                                <td></td>
+                                <td> Leather Gladstone Bag (8 lbs) ($2.50)</td>
+                            </tr>
+                            <tr>
+                                <td> Folding Canvas Boat, 10 ft. ($24.00)</td>
+                                <td></td>
+                                <td> Packing Trunk (40 lbs) ($3.95)</td>
+                            </tr>
+                            <tr>
+                                <td> Wool Blanket (89¢)</td>
+                                <td></td>
+                                <td> Full Size Trunk (85 lbs) ($5.95)</td>
+                            </tr>
+                            <tr>
+                                <td> U.S. Folding Cot ($5.95)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Reflecting Lamp ($2.59)</td>
+                                <td></td>
+                                <td><em><u>Tents</u></em></td>
+                            </tr>
+                            <tr>
+                                <td> Arctic Sleeping Bag ($13.00)</td>
+                                <td></td>
+                                <td> 7 × 7 ft A-Frame Tent ($3.65)</td>
+                            </tr>
+                            <tr>
+                                <td> Kerosene Tent Heater ($6.50)</td>
+                                <td></td>
+                                <td> 12 × 12 ft Miners’ Tent ($5.80)</td>
+                            </tr>
+                            <tr>
+                                <td> Camp Stool (55¢)</td>
+                                <td></td>
+                                <td> 16 × 24 ft Wall Tent ($22.70)</td>
+                            </tr>
+                            <tr>
+                                <td> Spy Glass ($15.00)</td>
+                                <td></td>
+                                <td> 24 × 30 ft Tarpaulin ($20.25)</td>
+                            </tr>
+                            <tr>
+                                <td> Deer-Foot Hunting Knife ($1.50)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Two-Blade Pocket Knife (65¢)</td>
+                                <td></td>
+                                <td> Tin Canteen (24¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Fishing Tackle and Lures ($8.98)</td>
+                                <td></td>
+                                <td> 5 Gallon Steel Tank ($2.89)</td>
+                            </tr>
+                            <tr>
+                                <td> Steel Jaw Animal Trap ($1.20)</td>
+                                <td></td>
+                                <td> Wooden Barrel, 50 gallons ($3.25)</td>
+                            </tr>
+                            <tr>
+                                <td> Dark Lantern ($1.15)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Match Safes, per doz. (40¢)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Jute Rope, per lb (18¢)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-body d-flex flex-column align-items-start">
+
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Tools</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Hand Saw (50¢)</td>
+                                <td></td>
+                                <td> Claw Hammer (75¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Bit Brace (plus bits) ($1.10)</td>
+                                <td></td>
+                                <td> Hatchet (45¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Pliers (45¢)</td>
+                                <td></td>
+                                <td> Combination Vise ($7.50)</td>
+                            </tr>
+                            <tr>
+                                <td> Carving Tools (82¢)</td>
+                                <td></td>
+                                <td> Sharpening Stone (30¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Gasoline Blowtorch ($3.00)</td>
+                                <td></td>
+                                <td> Oak Frame Grindstone ($2.25)</td>
+                            </tr>
+                            <tr>
+                                <td> Wood Axe ($3.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Transport</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Horses and Horse-Drawn Vehicles</u></em></td>
+                                <td></td>
+                                <td><em><u>Train Fares</u></em></td>
+                            </tr>
+                            <tr>
+                                <td> Riding Horse ($50.00)</td>
+                                <td></td>
+                                <td> 50 Miles (85¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Draft Horse ($20.00)</td>
+                                <td></td>
+                                <td> 100 Miles ($1.50)</td>
+                            </tr>
+                            <tr>
+                                <td> Saddle ($10.25)</td>
+                                <td></td>
+                                <td> 500 Miles ($5.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Bridle ($2.40)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Top Buggy (2 seats) ($65.00)</td>
+                                <td></td>
+                                <td><em><u>Sea Voyage (U.S./England)</u></em></td>
+                            </tr>
+                            <tr>
+                                <td> Canopy Surrey (4 seats) ($80.00)</td>
+                                <td></td>
+                                <td> First Class (one-way) ($75.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Canopy Carriage (4 seats) ($175.00)</td>
+                                <td></td>
+                                <td> First Class (round trip) ($110.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Farm Wagon (2 seats) ($45.00)</td>
+                                <td></td>
+                                <td> Steerage ($20.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Stable Fee (25¢ per day)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Single Harness ($16.50)</td>
+                                <td></td>
+                                <td> River Steamer Fare, local trip (10¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Double Harness ($22.40)</td>
+                                <td></td>
+                                <td> Bicycle ($43.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Draft Harness ($18.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <br>
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Weapons</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Hand-to-Hand</u></em></td>
+                                <td></td>
+                                <td><em><u>Shotguns</u></em></td>
+                            </tr>
+                            <tr>
+                                <td> Sword Cane ($10.00)</td>
+                                <td></td>
+                                <td> 20-Gauge ($25.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Rapier/Heavy Epee ($6.00)</td>
+                                <td></td>
+                                <td> 16-Gauge ($30.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Cavalier Sabre ($15.00)</td>
+                                <td></td>
+                                <td> 12-Gauge ($30.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Blackjack (60¢)</td>
+                                <td></td>
+                                <td> 10-Gauge ($35.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Bullwhip ($2.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td><em><u>Machine Gun</u></em></td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Handguns</u></em></td>
+                                <td></td>
+                                <td> Model 1882 Gatling Gun ($1,000.00)</td>
+                            </tr>
+                            <tr>
+                                <td> .25 Derringer ($4.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> .32 Revolver ($6.00)</td>
+                                <td></td>
+                                <td><em><u>Miscellaneous</u></em></td>
+                            </tr>
+                            <tr>
+                                <td> .38 Revolver ($8.00)</td>
+                                <td></td>
+                                <td> Signal Pistol (Flare Gun) ($10.00)</td>
+                            </tr>
+                            <tr>
+                                <td> .41 Revolver ($20.00)</td>
+                                <td></td>
+                                <td> Dynamite Stick ($1.00)</td>
+                            </tr>
+                            <tr>
+                                <td> .45 Revolver ($10.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td><em><u>Rifles</u></em></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> .22 Bolt-Action Rifle ($10.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> .32 Lever-Action Carbine ($12.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> .45 Martini Heavy Rifle ($15.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Col. Moran’s Air Rifle ($20.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> .303 Lee-Enfield ($25.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> .30-06 Bolt-Action Rifle ($30.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> Elephant Gun ($100.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Ammunition</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> .22 Long Rifle (box of 100) (30¢)</td>
+                                <td></td>
+                                <td> .38 Extra Long (box of 100) ($1.67)</td>
+                            </tr>
+                            <tr>
+                                <td> .25 Winchester (box of 100) (70¢)</td>
+                                <td></td>
+                                <td> .41 Short Round (box of 100) (72¢)</td>
+                            </tr>
+                            <tr>
+                                <td> .25-20 Marlin (box of 100) ($1.10)</td>
+                                <td></td>
+                                <td> .44 Smokeless (box of 100) ($2.35)</td>
+                            </tr>
+                            <tr>
+                                <td> .30 Short Round (box of 100) (44¢)</td>
+                                <td></td>
+                                <td> .45 Colt Army (box of 100) ($2.98)</td>
+                            </tr>
+                            <tr>
+                                <td> .30-30 U.S. Army (box of 100) ($4.25)</td>
+                                <td></td>
+                                <td> 10-Guage Shell (box of 25) ($1.76)</td>
+                            </tr>
+                            <tr>
+                                <td> .32 Short Round (box of 100) (80¢)</td>
+                                <td></td>
+                                <td> 12-Guage Shell (box of 25) ($1.18)</td>
+                            </tr>
+                            <tr>
+                                <td> .32 Long Colt (box of 100) (88¢)</td>
+                                <td></td>
+                                <td> 16-Guage Shell (box of 25) ($1.32)</td>
+                            </tr>
+                            <tr>
+                                <td> .38 Short Round (box of 100) (98¢)</td>
+                                <td></td>
+                                <td> 20-Guage Shell (box of 25) ($1.15)</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td></td>
+                                <td><strong>Miscellaneous</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td> College Tuition (semester) ($190.00)</td>
+                                <td></td>
+                                <td> False Beard (ventilated) ($1.75)</td>
+                            </tr>
+                            <tr>
+                                <td> Professional Microscope ($39.00)</td>
+                                <td></td>
+                                <td> Fencing Foil (per pair) ($1.35)</td>
+                            </tr>
+                            <tr>
+                                <td> Pocket Compass ($3.00)</td>
+                                <td></td>
+                                <td> Cheroot Cigars (250 cigars) ($3.65)</td>
+                            </tr>
+                            <tr>
+                                <td> Aneroid Barometer ($5.50)</td>
+                                <td></td>
+                                <td> World Atlas ($5.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Dog Power Sawing Machine ($15.00)</td>
+                                <td></td>
+                                <td> 30 volume Encyclopedia ($25.00)</td>
+                            </tr>
+                            <tr>
+                                <td> Fountain Pen (12¢)</td>
+                                <td></td>
+                                <td> Sewing Kit ($1.18)</td>
+                            </tr>
+                            <tr>
+                                <td> Ink (2 oz.) (42¢)</td>
+                                <td></td>
+                                <td> Stereoscope with Views ($2.25)</td>
+                            </tr>
+                            <tr>
+                                <td> Writing Tablet (4¢)</td>
+                                <td></td>
+                                <td> Toothbrush (5¢)</td>
+                            </tr>
+                            <tr>
+                                <td> Sewing Machine ($13.50)</td>
+                                <td></td>
+                                <td> Shaving Razor ($1.25)</td>
+                            </tr>
+                            <tr>
+                                <td> Full Toupee ($15.00)</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

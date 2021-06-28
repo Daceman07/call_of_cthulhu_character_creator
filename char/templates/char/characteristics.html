@@ -1,0 +1,80 @@
+{% extends 'char/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+       <div class="equipment-header">
+        <h1><strong><u>Characteristics / Stats:</u></strong></h1>
+        <h5><strong>A characteristic is one of eight numbers that create the foundations for an investigator. In the game,
+            each characteristic represents an aspect of an investor. These identified quantities determine the
+            relative capability of investigators and suggest ways for them to act and react during play. Your stats
+            have been already generated. There are alternative rules shown below to modify these stats.
+        </strong></h5>
+    </div>
+  </div>
+</div>
+    <div class="char-characteristics">
+
+        <h2>{{ error }}</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <img class="rounded float-left" src="{% static 'char/rope_guy.jpg' %}" alt="cigar_guy">
+            </div>
+            <div class="col-lg-3 col-md-12 col-sm-12">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <button class="btn btn-danger btn-lg btn-block" type="submit">Next</button>
+                </form>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="d-inline-block mb-2 text-success">Optional Rules</strong>
+                        <p><strong><u>If 3 skills are below 50 there are two options.</u></strong></p>
+                        <p><strong><u>Option One</u>:</strong> Rolled a D6*5 giving you a skill point pool to share among the low
+                            stats.</p>
+                        <button class="btn btn-outline-success" onclick="document.getElementById('dice').innerHTML = getRndInteger(1,6)">Roll for Stats</button>
+                        <strong id="dice"></strong>
+                        <br>
+                        <p><strong><u>Option Two</u>:</strong> Re-Roll everything:</p>
+                        <strong>Str, Con, Dex, App, Pow, & Luck: 3D6 * 5. Re-Roll and fill in the new stats</strong>
+                        <button class="btn btn-outline-info" onclick="document.getElementById('str').innerHTML = getRndInteger(1,6) + getRndInteger(1,6) + getRndInteger(1,6)">Roll for New Stats</button>
+                        <strong id="str"></strong>
+                        <strong>Size, Int, Edu: 2D6 + 6 * 5</strong>
+                        <button class="btn btn-outline-dark" onclick="document.getElementById('int').innerHTML = getRndInteger(1,6) + getRndInteger(1,6) + 6">Roll for Stats</button>
+                        <strong id="int"></strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * ((max - min)) + min) * 5;
+}
+</script>
+
+<script>
+
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * ((max - min)) + min) * 5;
+}
+</script>
+
+
+<script>
+function getRndInteger(min, max) {
+  return Math.floor(Math.random() * ((max - min)) + min) *5;
+}
+</script>
+{% endblock %}
+
+
+

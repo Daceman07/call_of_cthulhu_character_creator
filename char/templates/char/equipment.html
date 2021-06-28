@@ -1,0 +1,104 @@
+{% extends 'char/base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+       <div class="equipment-header">
+        <h1><strong>Cash, Assets & Equipment</strong></h1>
+        <h2>{{ error }}</h2>
+        <h4>The final step is to write down any important items, weapons, or equipment your investigator possesses.<br>
+            No need to write a detailed list of everything your character owns. Just list the notable items.<br>
+            Items that fit the profile of your investigator's living standard do not need to be paid for-you simply own
+            those
+        </h4>
+           <h3><strong>Examples of things you can have</strong></h3>
+            <a href="{% url 'shopping' %}" target="_blank">General Shopping Examples Link In New Tab</a> ||
+           <a href="{% static 'char/Weapons.pdf' %}" target="_blank">Weapon Examples Link In New Tab</a>
+    </div>
+  </div>
+</div>
+
+
+    <form method="post">
+        <div class="row mb-2">
+            <div class="col-md-4">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="arri2">Give Your Investigator Some Cash</strong>
+                        {% csrf_token %}
+                        <strong>Cash:</strong> ${{ cash }}<br>
+                        <strong>Assets:</strong> ${{ assets }}<br>
+                        <strong>Spending Level:</strong> ${{ spending_level }}<br>
+                        <p><u>Transfer the listings above to the below fields.</u></p>
+                        {{ cashform.as_p }}
+                        <br>
+                        Your Credit Rating: ${{ CR }}<br>
+                        What Credit Rating Means: <br>
+                        💸 Credit Rating 0 <br>
+                        ...Penniless, living on the streets.<br>
+                        💸 Credit Rating 1-9 <br>
+                        ...Poor, possessing the bare minimum.<br>
+                        💵 Credit Rating 10-49 <br>
+                        ... Average, a reasonable level of comfort.<br>
+                        🎩 Credit Rating 50-89 <br>
+                        ... Wealthy, some degree of luxury.<br>
+                        🎩 Credit Rating 90-98 <br>
+                        ...Rich, great wealth and luxury.<br>
+                        💰 Credit Rating 99<br>
+                        ...Super rich, money is no object.<br>
+                        <p class="card-text mb-auto"><strong> Example:</strong> Brian chose a Credit Rating of 40% for
+                            his soldier, meaning that he has an average income.</p>
+                        <br>
+                         <p class="card-text mb-auto"><strong>Equipment Examples:</strong> This could be something lke
+                             your treasured possession. Or things related to your occupation. Notepad, sketchbook,
+                             lighter, pocket knife, and cigarettes.</p>
+                        {{ form.as_p }}
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="arri">Weapons, Damage and Cost Examples:</strong>
+                        <dl>
+                            <dt>Small Knife: 1D4.</dt>
+                            <dd>Cost: $2/$6</dd>
+                            <dt>Machete: 1D8.</dt>
+                            <dd>Cost: $4/$50</dd>
+                            <dt>Small club: 1D6.</dt>
+                            <dd>Cost: $3/$35</dd>
+                            <dt>Baseball bat: 1D8.</dt>
+                            <dd>Cost: $3/$35</dd>
+                            <dt>Handgun: 1D10.</dt>
+                            <dd>Cost: $25/-</dd>
+                            <dt>Shotgun: 4D6 (at close range, otherwise 2D6; does not impale)</dt>
+                            <dd>Cost: $40/$200</dd>
+                            <dt>Rifle: 2D6+4.</dt>
+                            <dd>Cost: $50/$400</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                    <div class="card-body d-flex flex-column align-items-start">
+                        <strong class="arri3">Weapons</strong>
+                        <p class="card-text mb-auto">Choose a weapon if it fits your investigator and enter the damage the damage from examples to the left</p>
+                        {{ weapons.as_p }}
+                        <br>
+                        <br>
+                        <button class="btn btn-danger btn-lg" type="submit">Next</button>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'char/base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+       <div class="equipment-header">
+           <h1><strong><u>Basic Info</u>:</strong></h1>
+        <h4>Give your investigator a name, age, sex, occupation, current residence and where they grew up.
+        </h4>
+    </div>
+  </div>
+</div>
+    <br>
+<h2>{{ error }}</h2>
+    <div class="char-info">
+     <div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12">
+    <img class="rounded float-left" src="{% static 'char/octoguy.jpg' %}" alt="octoguy">
+        </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+    <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button class="btn btn-danger btn-lg btn-block" type="submit">Next</button>
+</form>
+    </div>
+    </div>
+    </div>
+<br>
+
+{% endblock %}

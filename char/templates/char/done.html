@@ -1,0 +1,38 @@
+{% extends 'char/base.html' %}
+{% load static %}
+
+{% block content %}
+
+       <div class="jumbotron jumbotron-fluid">
+  <div class="container">
+       <div class="equipment-header">
+           <h1><strong><u>Your Investigator</u>:</strong></h1>
+        <h4>Get your investigator sheet which will give you a PDF. After hit home to return to the home page.
+        </h4>
+    </div>
+  </div>
+</div>
+
+ <div class="row lg-12">
+        <div class="col-md-12">
+            <div class="card flex-md-row mb-4 shadow-sm h-md-250">
+                <img src="{% static 'char/page.jpg' %}" data-holder-rendered="true" alt="page">
+                <div class="card-body d-flex flex-column align-items-start">
+                    <strong class="d-inline-block mb-2 text-danger">Download Investigator Sheet</strong>
+                    <h3 class="mb-0">
+                        <a href="{% url 'completed' %}" target="_blank">Download Completed Investigator</a>
+
+                    </h3>
+                    <br>
+                    <strong class="d-inline-block mb-2 text-success">Back to Home Page & Resources</strong>
+                    <h3 class="mb-0">
+                        <a href="{% url 'currentchar' %}">Home Page</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+{% endblock %}
